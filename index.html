@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Daily Timetable</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.timetable-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+}
+
+td {
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .timetable-container {
+    padding: 10px;
+  }
+}
+
+    </style>
+  <div class="timetable-container">
+    <h1>Daily Timetable</h1>
+    <table class="timetable">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7:00 AM - 8:00 AM</td>
+          <td>Gym 🏋</td>
+        </tr>
+        <tr>
+          <td>8:30 AM - 9:00 AM</td>
+          <td>Breakfast 🍞 </td>
+        </tr>
+        <tr>
+          <td>9:00 AM - 11:00 AM</td>
+          <td>Project Work</td>
+        </tr>
+        <tr>
+          <td>11:00 AM - 11:10 AM</td>
+          <td>Break 🚫❗</td>
+        </tr>
+        <tr>
+          <td>11:10 AM - 1:00 PM</td>
+          <td>Project Work</td>
+        </tr>
+        <tr>
+          <td>1:00 PM - 2:00 PM</td>
+          <td>Lunch 🍲</td>
+        </tr>
+        <tr>
+          <td>2:00 PM - 5:00 PM</td>
+          <td>Project Work 📝</td>
+        </tr>
+        <tr>
+          <td>5:00 PM - 5:30 PM</td>
+          <td>Break 🚫❗<td>
+        </tr>
+        <tr>
+          <td>5:30 PM - 8:00 PM</td>
+          <td>Study 📖</td>
+        </tr>
+        <tr>
+          <td>8:00 PM - 9:00 PM</td>
+          <td>Dinner 🍜🍗</td>
+        </tr>
+        <tr>
+          <td>9:00 PM - 11:00 PM</td>
+          <td>Learning English 📜</td>
+        </tr>
+        <tr>
+          <td>11:00 PM - 7:00 PM</td>
+          <td>it's Time to Bed 💤<🛏</td>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
